@@ -56,7 +56,6 @@ async def yearRange(ctx, message):
   yearRange = get52WkRange(message)
   await ctx.channel.send(f"Year Range of {stockSymbol}: {yearRange}.")
 
-
 @client.command(aliases=['mc'])
 async def marketCap(ctx, message):
   message = message.upper()
@@ -130,9 +129,3 @@ async def calendar(ctx, message):
 client.run(os.environ['TOKEN'])
 #keep_alive()
 
-
-
-# Future Additons
-#-Scrape chart from YFinance
-#-Earnings Per Share (EPS)
-#-afterHoursTimeOfRetrieval
